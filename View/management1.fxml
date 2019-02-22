@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   <fx:define>
+   <ToggleGroup fx:id="group"/>
+   </fx:define>
+      <Label layoutX="27.0" layoutY="57.0" text="고객번호" />
+      <Label layoutX="27.0" layoutY="130.0" text="이름" />
+      <Label layoutX="27.0" layoutY="204.0" text="성별" />
+      <Label layoutX="27.0" layoutY="277.0" text="생년월일" />
+      <Label layoutX="27.0" layoutY="353.0" text="가입날짜" />
+      <Label layoutX="27.0" layoutY="432.0" text="휴대폰번호" />
+      <TextField id="t1GuestNumber" layoutX="107.0" layoutY="52.0" prefHeight="30.0" prefWidth="200.0" />
+      <TextField id="t1Name" layoutX="107.0" layoutY="131.0" prefHeight="30.0" prefWidth="200.0" />
+      <RadioButton id="t1Man" layoutX="107.0" layoutY="204.0" mnemonicParsing="false" text="남성" toggleGroup="$group" userData="남성"/>
+      <RadioButton id="t1Woman" layoutX="174.0" layoutY="204.0" mnemonicParsing="false" text="여성" toggleGroup="$group" userData="여성"/>
+      <DatePicker id="t1BirthDate" layoutX="107.0" layoutY="272.0" prefHeight="30.0" prefWidth="200.0" />
+      <DatePicker id="t1JoinDate" layoutX="107.0" layoutY="348.0" prefHeight="30.0" prefWidth="200.0" />
+      <TextField id="t1PhoneNumber" layoutX="108.0" layoutY="427.0" prefHeight="30.0" prefWidth="200.0" />
+      <Button id="t1BtnEnroll" layoutX="116.0" layoutY="487.0" mnemonicParsing="false" text="등록" />
+      <Button id="t1BtnClose" layoutX="214.0" layoutY="487.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <children>
+      <TextField fx:id="textId" layoutX="142.0" layoutY="620.0" />
+      <PasswordField fx:id="textPassword" layoutX="442.0" layoutY="620.0" />
+      <Button fx:id="btnLogin" layoutX="710.0" layoutY="620.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="BtnClose" layoutX="818.0" layoutY="620.0" mnemonicParsing="false" text="Close" />
+      <Label layoutX="62.0" layoutY="625.0" text="아이디" />
+      <Label layoutX="348.0" layoutY="625.0" text="비밀번호" />
+      <ImageView fitHeight="585.0" fitWidth="887.0" layoutX="23.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/제목%20없음.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

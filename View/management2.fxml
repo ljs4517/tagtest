@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="35.0" layoutY="59.0" text="상품명" />
+      <Label layoutX="36.0" layoutY="137.0" text="공급가" />
+      <Label layoutX="36.0" layoutY="212.0" text="판매가" />
+      <Label layoutX="37.0" layoutY="283.0" text="수량" />
+      <Label layoutX="36.0" layoutY="353.0" text="입고일" />
+      <TextField id="t2ProductName" layoutX="102.0" layoutY="54.0" prefHeight="30.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="432.0" text="유통기한" />
+      <TextField id="t2Provision" layoutX="102.0" layoutY="132.0" prefHeight="30.0" prefWidth="200.0" />
+      <TextField id="t2Sale" layoutX="102.0" layoutY="207.0" prefHeight="30.0" prefWidth="200.0" />
+      <TextField id="t2Quantity" layoutX="102.0" layoutY="278.0" prefHeight="30.0" prefWidth="200.0" />
+      <DatePicker id="t2ShedDate" layoutX="99.0" layoutY="358.0" prefHeight="30.0" prefWidth="200.0" />
+      <DatePicker id="t2ExpirationDate" layoutX="101.0" layoutY="427.0" prefHeight="30.0" prefWidth="200.0" />
+      <Button id="t2BtnEnroll" layoutX="116.0" layoutY="486.0" mnemonicParsing="false" text="등록" />
+      <Button id="t2BtnClose" layoutX="207.0" layoutY="486.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

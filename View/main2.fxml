@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="720.0" prefWidth="970.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="회원관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="608.0" prefWidth="972.0">
+                     <children>
+                        <TableView fx:id="t1TableView" layoutY="150.0" prefHeight="525.0" prefWidth="970.0">
+                          <columns>
+                            <TableColumn prefWidth="150.0" text="고객번호" />
+                            <TableColumn prefWidth="150.0" text="이름" />
+                              <TableColumn prefWidth="100.0" text="성별" />
+                              <TableColumn prefWidth="200.0" text="생년월일" />
+                              <TableColumn prefWidth="190.0" text="가입날짜" />
+                              <TableColumn prefWidth="190.0" text="휴대폰번호" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="t1BtnDelete1" layoutX="710.0" layoutY="103.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="t1BtnRectify1" layoutX="786.0" layoutY="103.0" mnemonicParsing="false" text="수정" />
+                        <Button fx:id="t1BtnEnroll1" layoutX="861.0" layoutY="103.0" mnemonicParsing="false" text="등록" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="재고관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="900.0">
+                     <children>
+                        <TableView fx:id="t2TableView" layoutY="148.0" prefHeight="526.0" prefWidth="970.0">
+                          <columns>
+                            <TableColumn prefWidth="150.0" text="제품명" />
+                            <TableColumn prefWidth="150.0" text="공급가" />
+                              <TableColumn prefWidth="150.0" text="판매가" />
+                              <TableColumn prefWidth="150.0" text="수량" />
+                              <TableColumn prefWidth="180.0" text="입고일" />
+                              <TableColumn prefWidth="180.0" text="유통기한" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="t2BtnDelete2" layoutX="744.0" layoutY="96.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="t2BtnRectify2" layoutX="818.0" layoutY="96.0" mnemonicParsing="false" text="수정" />
+                        <Button fx:id="t2BtnEnroll2" layoutX="888.0" layoutY="96.0" mnemonicParsing="false" text="등록" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab3" text="재고현황">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="900.0">
+                     <children>
+                        <HBox layoutX="130.0" layoutY="53.0" prefHeight="517.0" prefWidth="726.0">
+                           <children>
+                              <BarChart fx:id="barChart" prefHeight="474.0" prefWidth="723.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
